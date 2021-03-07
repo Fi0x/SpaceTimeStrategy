@@ -18,25 +18,16 @@ namespace STSLogic
         
         public string PlayerID
         {
-            get
-            {
-                return _playerId;
-            }
+            get => _playerId;
         }
         public List<IBuilding> Buildings
         {
-            get
-            {
-                return _buildings;
-            }
+            get => _buildings;
         }
 
         public List<IUnit> Units
         {
-            get
-            {
-                return _units;
-            }
+            get => _units;
         }
         public long CurrentTime { get; set; }
     }
