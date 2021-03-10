@@ -1,11 +1,11 @@
-using System.ComponentModel.Design.Serialization;
-
 namespace STSLogic
 {
     public class LogicController
     {
         private static LogicController _instance;
         private Player _ownPlayer;
+
+        private Match _runningMatch;
         
         private LogicController()
         {
@@ -20,6 +20,15 @@ namespace STSLogic
         {
             get => _ownPlayer;
             set => _ownPlayer = value;
+        }
+
+        public Match GetMatch()
+        {
+            if (_runningMatch == null)
+            {
+                _runningMatch = new Match();
+            }
+            return _runningMatch;
         }
     }
 }

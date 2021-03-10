@@ -29,6 +29,6 @@ namespace STSLogic
         {
             get => _units;
         }
-        public long CurrentTime { get; set; }
+        public long ViewingTime { get; set; }
     }
 }
